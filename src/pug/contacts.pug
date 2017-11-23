@@ -1,0 +1,26 @@
+section.contacts
+    h1.title Контакты
+    ul.contacts__wrapper
+        li.contacts__item
+            a(href="https://www.facebook.com/profile.php?id=100009135976177&ref=bookmarks" target="_blank")
+                <i class="fa fa-facebook-official fa-2x" aria-hidden="true"></i>
+        li.contacts__item
+            a(href="https://telegram.me/vvitto" target="_blank")
+                <i class="fa fa-telegram fa-2x" aria-hidden="true"></i>  
+        li.contacts__item
+            a(href="https://vk.com/v.vitto" target="_blank")
+                <i class="fa fa-vk fa-2x" aria-hidden="true"></i>  
+
+    form.form
+        div.form__item
+            input(type="text" name="name" placeholder="Имя")
+            input(type="text" name="email" placeholder="Email")
+            
+        div.form__item
+            textarea(name="message", cols="30", rows="10" placeholder="Сообщение")
+            div.input-trigger
+        div.form__item
+            input(type="button" value="Отправить" class="submit")
+            div.input-trigger
+    
+section.footer @vvitto 2017

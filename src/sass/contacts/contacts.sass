@@ -1,0 +1,91 @@
+.contacts
+    text-align: center
+    background-color: $secBgCrWhite
+    padding-bottom: 30px
+    color: $commonFntCr
+
+    h1.title
+        padding-bottom: 15px
+    &__wrapper
+        list-style: none
+        margin: 0px
+        padding: 0px
+        margin-bottom: 15px
+    &__item
+        display: inline-block
+        margin: 0px 10px
+        a
+            line-height: 48px
+            color: $commonFntCr
+            transition: all 0.2s
+            &:hover
+                transition: all 0.2s
+                color: #333
+    .form
+        font-size: 0px
+        display: inline-block
+        &__item
+            text-align: center
+            font-size: 0px
+            input,textarea
+                border: 0px
+                background-color: #ededed
+                padding: 15px
+                box-sizing: border-box
+                margin: 2px
+                transition: all 0.3s
+                outline: none
+                font-size: 16px
+                border: solid 1px #b7b7b7
+                position: relative
+                
+            input[type='text']
+                width: 248px
+                height: 50px
+                box-sizing: border-box
+                font-size-adjust: 0.5
+                @media screen and (min-width: 680px)
+                    &:first-child:focus
+                        transition: all 0.3s
+                        transform: translate(-6px, -6px)
+                        padding: 10px
+                        line-height: 12px
+                        box-sizing: border-box
+
+                    &:last-child:focus
+                        transition: all 0.3s
+                        transform: translate(5px, -5px)
+                        padding: 10px
+            input[type='button']
+                cursor: pointer
+                background-color: #ededed
+                box-sizing: border-box
+                padding: 10px 20px
+                font-weight: 200
+                font-size: 22px
+                &:hover
+                    background-color: #b7b7b7
+
+
+                
+            textarea
+                max-width: 500px
+                min-width: 500px
+                box-sizing: border-box
+
+        @media screen and (max-width: 680px)
+            width: 100%
+            input, textarea
+                display: block
+                width: calc(100% - 4px) !important
+                max-width: calc(100% - 4px) !important
+                min-width: calc(100% - 4px) !important
+.footer
+    font-family: Comfortaa
+    font-weight: bold
+    margin: 0px
+    height: 50px
+    width: 100% 
+    line-height: 50px
+    text-align: center
+    background-color: #fff

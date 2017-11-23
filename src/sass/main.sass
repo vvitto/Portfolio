@@ -1,0 +1,58 @@
+@import "variables.sass"
+@import "fonts.sass"
+body
+    padding: 0px
+    margin: 0px
+    background-color: #ededed
+    //background-image: url("../assets/bg4.png")
+    .preloader
+        position: fixed
+        z-index: 10000
+        width: 100%
+        height: 100%
+        background-color: white
+        img
+            position: absolute
+            left: 50%
+            top: 50%
+            transform: translate(-200px, -150px)    
+.page-wrapper
+    height: 100%
+    section
+        box-sizing: border-box
+        color: $commonFntCr
+        width: 80%
+        height: auto
+        margin: 40px auto
+        box-shadow: 0px 0px 5px #b7b7b7
+        overflow: hidden
+
+        @media screen and (max-width: 680px)
+            width: 100%
+        .title
+            font-family: $secTitFont
+            font-weight: 100
+            margin: 0px
+            padding: 30px
+            font-size: 32px
+    section.preview
+        margin: 0px
+        width: 100%
+    @import "header/header.sass"
+
+    @import "preview/preview.sass"
+    a
+        text-decoration: none
+    @import "about/about.sass"
+    @import "works/works.sass"
+    @import "skills/skills.sass"
+    @import "contacts/contacts.sass"
+
+.viwer-Overlayer
+    position: fixed
+    width: 100%
+    height: 100%
+    background-color: #333
+    opacity: 0.5
+    z-index: 10000
+    top: 0px

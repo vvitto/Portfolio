@@ -1,0 +1,90 @@
+.works
+    text-align: center
+    font-family: Comfortaa
+    padding-bottom: 30px
+    position: relative
+    background-color: $secBgCrWhite
+    @media screen and (max-width: 900px)
+        padding: 0px
+    .title
+        color: #1a1a1a
+    .slider
+        &__item
+            text-align: left
+            overflow: hidden
+            height: auto
+            padding-bottom: 30px
+            outline: none
+            img
+                float: left
+                width: 65%
+                @media screen and (max-width: 900px)
+                    width: 100%
+            &-text
+                padding-top: 15px
+                line-height: 1.6em
+                display: block
+                color: #6b6b6b
+            &-showAll
+                display: inline-block
+
+                box-shadow: 0px 2px 3px #b7b7b7
+                border-radius: 5px
+                background-color: #ededed
+                margin-top: 20px
+                cursor: pointer
+                font-weight: bold
+                
+                letter-spacing: 2px
+                transition: all 200ms
+                &:hover
+                    transform: translateY(-3px)
+                    box-shadow: 0px 4px 3px #b7b7b7
+                &:active
+                    transform: translateY(2px)
+                    box-shadow: 0px 0px 3px #b7b7b7
+                a
+                    display: inline-block
+                    position: relative
+                    padding: 15px 20px
+                    outline: 0px
+                    color: #919191
+
+        ul.slick-dots
+            li
+                display: inline-block
+                margin: 0px 5px
+                border: solid 3px #b7b7b7
+                border-radius: 100px
+                button
+
+                    font-size: 0px
+                    border-radius: 1000px
+                    outline: none
+                    width: 15px
+                    height: 15px
+                    padding: 0px
+                    border: solid 3px #ededed
+                    background-color: #ededed
+                    cursor: pointer
+            li.slick-active
+                button
+                    background-color: #333
+
+        &__arrow
+            position: relative
+            top: 140px
+            text-align: center
+            z-index: 1000
+            cursor: pointer
+            margin: 0px 15px
+            transition: all 200ms
+            &:hover
+                transform: scale(1.2)
+                transition: all 200ms
+        &__arrow-prev
+            float: left
+        &__arrow-next
+            float: right
+       
+            

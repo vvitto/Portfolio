@@ -1,0 +1,28 @@
+html
+    head
+        title Welcome:)
+        meta(charset='utf-8')
+        meta(name='viewport', content='width=device-width, initial-scale=1')
+        link(rel="stylesheet", href="assets/font-awesome/css/font-awesome.min.css")
+        link(href="css/animate.css" rel="stylesheet")
+        link(rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon")
+        link(rel="stylesheet" type="text/css" href="js/slider/slick/slick.css")
+        link(rel="stylesheet", href="css/main.css")
+        style.
+            .header{position: fixed;}
+    body
+        div.preloader
+            img(src="assets/preloader.gif")
+        div.page-wrapper
+            include pug/header.pug
+            include pug/s_preview.pug
+            include pug/about.pug
+            include pug/works.pug
+            include pug/skills.pug
+            include pug/contacts.pug
+    script(src="https://code.jquery.com/jquery-3.2.1.min.js", integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=",crossorigin="anonymous")
+    script(src="js/parallax/parallax.min.js")
+    script(src="js/libs/wow.js")
+
+    script(src="js/slider/slick/slick.min.js")
+    script(src="js/main.js")

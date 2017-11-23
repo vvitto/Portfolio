@@ -1,0 +1,12 @@
+header.header
+    a()
+        h2.header__menu-item.active#preview Portfolio
+    ul.header__menu
+        -var menu = ["Обо мне", "Мои работы", "Навыки", "Контакты"]
+        -var menuId= ['about', 'works', 'skills', 'contacts']
+        each item, index in menu
+            li.header__menu-item(id= menuId[index])
+                = item
+    div.header__menu-toggle
+    div.header__menu-trigger
+        <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
