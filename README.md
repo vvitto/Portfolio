@@ -1,4 +1,3 @@
 # Portfolio
-This is my simple portfolio
+This is my simple portfolio. Link to my [website](vvitt.name)
 
-# Link to my [website](vvitt.name)
