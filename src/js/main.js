@@ -15,7 +15,7 @@ $(document).ready(function(){
 
     var sec = [];
     $("section").each(function(){
-        sec.push($(this).position().top);V
+        sec.push($(this).position().top);
     });
 
 
