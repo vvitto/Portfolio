@@ -1,3 +1,3 @@
 # Portfolio
-This is my simple portfolio. Link to my [website](vvitt.name)
+This is my simple portfolio. Link to my [website](http://vvitto.name)
 
