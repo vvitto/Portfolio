@@ -9,17 +9,27 @@
     .title
         color: #1a1a1a
     .slider
+        @media screen and (max-width: 445px)
+            padding: 0px 20px
+            cursor: pointer
+
         &__item
             text-align: left
             overflow: hidden
+            box-sizing: content-box
             height: auto
             padding-bottom: 30px
             outline: none
+            max-height: 100%
+            @media screen and (max-width: 445px)
+                text-align: center
             img
                 float: left
                 width: 65%
                 @media screen and (max-width: 900px)
                     width: 100%
+
+            
             &-text
                 padding-top: 15px
                 line-height: 1.6em
@@ -51,13 +61,13 @@
                     color: #919191
 
         ul.slick-dots
+ 
             li
                 display: inline-block
                 margin: 0px 5px
                 border: solid 3px #b7b7b7
                 border-radius: 100px
                 button
-
                     font-size: 0px
                     border-radius: 1000px
                     outline: none
@@ -67,6 +77,7 @@
                     border: solid 3px #ededed
                     background-color: #ededed
                     cursor: pointer
+                    float: left
             li.slick-active
                 button
                     background-color: #333
@@ -79,6 +90,8 @@
             cursor: pointer
             margin: 0px 15px
             transition: all 200ms
+            @media screen and (max-width: 445px)
+                display: none
             &:hover
                 transform: scale(1.2)
                 transition: all 200ms

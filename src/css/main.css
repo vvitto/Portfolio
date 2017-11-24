@@ -97,7 +97,8 @@ body {
       padding: 0px;
       margin: 0px;
       float: right;
-      background-color: #1a1a1a; }
+      background-color: #1a1a1a;
+      list-style: none; }
       @media screen and (max-width: 680px) {
         .page-wrapper .header .header__menu {
           width: 100%; } }
@@ -155,6 +156,10 @@ body {
         padding: 7px;
         border-radius: 3px;
         display: inline-block; }
+        @media screen and (max-width: 375px) {
+          .page-wrapper .preview__greeting span {
+            margin: 0px 5px;
+            line-height: 1.1em; } }
     .page-wrapper .preview__button {
       font-family: "Comfortaa";
       border: solid 3px white;
@@ -234,12 +239,21 @@ body {
         padding: 0px; } }
     .page-wrapper .works .title {
       color: #1a1a1a; }
+    @media screen and (max-width: 445px) {
+      .page-wrapper .works .slider {
+        padding: 0px 20px;
+        cursor: pointer; } }
     .page-wrapper .works .slider__item {
       text-align: left;
       overflow: hidden;
+      box-sizing: content-box;
       height: auto;
       padding-bottom: 30px;
-      outline: none; }
+      outline: none;
+      max-height: 100%; }
+      @media screen and (max-width: 445px) {
+        .page-wrapper .works .slider__item {
+          text-align: center; } }
       .page-wrapper .works .slider__item img {
         float: left;
         width: 65%; }
@@ -287,7 +301,8 @@ body {
         padding: 0px;
         border: solid 3px #ededed;
         background-color: #ededed;
-        cursor: pointer; }
+        cursor: pointer;
+        float: left; }
     .page-wrapper .works .slider ul.slick-dots li.slick-active button {
       background-color: #333; }
     .page-wrapper .works .slider__arrow {
@@ -298,6 +313,9 @@ body {
       cursor: pointer;
       margin: 0px 15px;
       transition: all 200ms; }
+      @media screen and (max-width: 445px) {
+        .page-wrapper .works .slider__arrow {
+          display: none; } }
       .page-wrapper .works .slider__arrow:hover {
         transform: scale(1.2);
         transition: all 200ms; }
@@ -321,14 +339,16 @@ body {
         .page-wrapper .skills__list {
           margin: 0px; } }
     .page-wrapper .skills__item {
-      flex-basis: 25%;
+      flex-basis: 20%;
       text-align: center;
-      margin: 20px; }
+      box-sizing: border-box;
+      padding: 20px; }
       @media screen and (max-width: 600px) {
         .page-wrapper .skills__item {
-          margin: auto; } }
+          margin: auto;
+          flex-basis: 30%; } }
       .page-wrapper .skills__item img {
-        width: 150px; }
+        width: 100%; }
       .page-wrapper .skills__item span {
         display: block;
         font-family: Comfortaa;
