@@ -6,6 +6,8 @@
     background-color: $secBgCrWhite
     @media screen and (max-width: 900px)
         padding: 0px
+    @media screen and (max-width: 450px)
+        font-size: 14px
     .title
         color: #1a1a1a
     .slider
@@ -90,8 +92,9 @@
             cursor: pointer
             margin: 0px 15px
             transition: all 200ms
-            @media screen and (max-width: 445px)
-                display: none
+            display: none !important
+            @media screen and (min-width: 445px)
+                display: block !important
             &:hover
                 transform: scale(1.2)
                 transition: all 200ms
