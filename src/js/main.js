@@ -78,8 +78,6 @@ $(document).ready(function(){
         }
     });
 
-
-
     $(".submit").on("click", function(){
         if($("form input[name='name']").val() == ""){
             $("form input[name='name']").css("background-color", "#f46242");
@@ -88,7 +86,6 @@ $(document).ready(function(){
         }else if($("form textarea[name='message'").val() == ""){
             $("form textarea[name='message'").css("background-color", "#f46242");
         }else{
-
             var name = $(".form input[name='name']").val();
             var email = $(".form input[name='email']").val();
             var text = $(".form textarea").val();
@@ -99,7 +96,7 @@ $(document).ready(function(){
                 data: {message: message},
                 dataType: "json",
                 success: function(){
-                    $(".submit").val("Сообщение было получено, скоро я с вами свяжусь)");
+                    $(".submit").val("Сообщение было получено!");
                     $('.submit').attr("disabled", true);
                     $(".submit").css('background-color', "#41f49b");
                 }
