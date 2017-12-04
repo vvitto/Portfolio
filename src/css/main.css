@@ -139,8 +139,11 @@ body {
     -webkit-align-items: center;
         -ms-flex-align: center;
             align-items: center;
-    min-height: 100%;
-    padding-top: 50px; }
+    min-height: -webkit-calc(100% - 50px);
+    min-height: calc(100% - 50px);
+    padding-top: 50px;
+    -webkit-box-sizing: content-box;
+            box-sizing: content-box; }
     @media screen and (max-width: 940px) {
       .page-wrapper .preview {
         text-align: center;

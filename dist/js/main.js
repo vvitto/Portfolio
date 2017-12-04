@@ -9,7 +9,7 @@ $(document).ready(function(){
 
 
     $('.parallax-window').parallax({imageSrc: 'assets/bg2.jpg'});
-    $('.parallax-window2').parallax({imageSrc: 'assets/avatar.jpg'});
+  
 
     new WOW().init();
 
