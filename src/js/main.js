@@ -1,4 +1,5 @@
 $(document).ready(function(){
+    new WOW().init();
     setInterval(function(){
         $(".preloader").animate({
             opacity: 0.0
@@ -6,12 +7,12 @@ $(document).ready(function(){
             $('.preloader').css("display", "none");
         });
     }, 500);
-
+    
 
     $('.parallax-window').parallax({imageSrc: 'assets/bg2.jpg'});
   
 
-    new WOW().init();
+    
 
     var sec = [];
     $("section").each(function(){

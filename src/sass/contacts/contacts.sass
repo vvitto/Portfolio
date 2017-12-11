@@ -44,18 +44,20 @@
                 height: 50px
                 box-sizing: border-box
                 font-size-adjust: 0.5
-                @media screen and (min-width: 680px)
-                    &:first-child:focus
-                        transition: all 0.3s
-                        transform: translate(-6px, -6px)
-                        padding: 10px
-                        line-height: 12px
-                        box-sizing: border-box
+                &:focus
+                    border: solid 1px #333
+                // @media screen and (min-width: 680px)
+                //     &:first-child:focus
+                //         transition: all 0.3s
+                //         transform: translate(-6px, -6px)
+                //         padding: 10px
+                //         line-height: 12px
+                //         box-sizing: border-box
 
-                    &:last-child:focus
-                        transition: all 0.3s
-                        transform: translate(5px, -5px)
-                        padding: 10px
+                //     &:last-child:focus
+                //         transition: all 0.3s
+                //         transform: translate(5px, -5px)
+                //         padding: 10px
             input[type='button']
                 cursor: pointer
                 background-color: #ededed
@@ -72,6 +74,8 @@
                 max-width: 500px
                 min-width: 500px
                 box-sizing: border-box
+                &:focus
+                    border: solid 1px #333
 
         @media screen and (max-width: 680px)
             width: 100%

@@ -498,26 +498,8 @@ body {
           -webkit-box-sizing: border-box;
                   box-sizing: border-box;
           font-size-adjust: 0.5; }
-          @media screen and (min-width: 680px) {
-            .page-wrapper .contacts .form__item input[type='text']:first-child:focus {
-              -webkit-transition: all 0.3s;
-              -o-transition: all 0.3s;
-              transition: all 0.3s;
-              -webkit-transform: translate(-6px, -6px);
-                  -ms-transform: translate(-6px, -6px);
-                      transform: translate(-6px, -6px);
-              padding: 10px;
-              line-height: 12px;
-              -webkit-box-sizing: border-box;
-                      box-sizing: border-box; }
-            .page-wrapper .contacts .form__item input[type='text']:last-child:focus {
-              -webkit-transition: all 0.3s;
-              -o-transition: all 0.3s;
-              transition: all 0.3s;
-              -webkit-transform: translate(5px, -5px);
-                  -ms-transform: translate(5px, -5px);
-                      transform: translate(5px, -5px);
-              padding: 10px; } }
+          .page-wrapper .contacts .form__item input[type='text']:focus {
+            border: solid 1px #333; }
         .page-wrapper .contacts .form__item input[type='button'] {
           cursor: pointer;
           background-color: #ededed;
@@ -533,6 +515,8 @@ body {
           min-width: 500px;
           -webkit-box-sizing: border-box;
                   box-sizing: border-box; }
+          .page-wrapper .contacts .form__item textarea:focus {
+            border: solid 1px #333; }
       @media screen and (max-width: 680px) {
         .page-wrapper .contacts .form {
           width: 100%; }
