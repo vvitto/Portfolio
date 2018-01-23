@@ -14,53 +14,84 @@
         @media screen and (max-width: 445px)
             padding: 0px 20px
             cursor: pointer
-
+        .slick-list
+            overflow: visible
         &__item
             text-align: left
-            overflow: hidden
-            box-sizing: content-box
+            padding: 0px 60px
+            box-sizing: border-box
             height: auto
             padding-bottom: 30px
             outline: none
-            max-height: 100%
-            @media screen and (max-width: 445px)
-                text-align: center
-            img
-                float: left
-                width: 65%
-                @media screen and (max-width: 900px)
+            display: flex
+            justify-content: space-around
+            @media screen and (max-width: 800px)
+                width: 100%
+                flex-wrap: wrap
+                padding: 0px
+                overflow: hidden
+                box-sizing: content-box
+                .slider__img, .slider__descr
+                    flex-basis: 80%
+                .slider__img img
                     width: 100%
+            @media screen and (max-width: 450px)
 
-            
-            &-text
-                padding-top: 15px
-                line-height: 1.6em
-                display: block
-                color: #6b6b6b
-            &-showAll
+                .slider__img
+                    transform: none
+                    margin: 0px
+        &__img
+            flex-basis: 60%
+            box-sizing: border-box
+            transform: perspective(450px) rotateY(20deg) rotate(-5deg)
+            transition: transform 600ms
+            margin: 20px
+            img
+                margin: auto
+                width: 80%
+                max-width: 600px
+                position: relative
+                z-index: 10000
+                box-shadow: -20px 5px 20px #e5e5e5
+                transform: scale(0.9)
+                transition: all 600ms
+                @media screen and (max-width: 1200px)
+                    width: 100%
+            &:hover
+                animation: none
+                transform: perspective(500px) rotateY(0deg) rotate(0deg)
+                img
+                    box-shadow: 0px 0px 20px #e5e5e5
+                    transform: scale(1.0)
+        &__descr
+            flex-basis: 40%
+            padding-top: 40px
+        &__text
+            line-height: 1.6em
+            display: block
+            color: #6b6b6b
+        &__showAll
+            display: inline-block
+            box-shadow: 0px 2px 3px #b7b7b7
+            border-radius: 5px
+            background-color: #ededed
+            margin-top: 20px
+            cursor: pointer
+            font-weight: bold
+            letter-spacing: 2px
+            transition: all 200ms
+            &:hover
+                transform: translateY(-3px)
+                box-shadow: 0px 4px 3px #b7b7b7
+            &:active
+                transform: translateY(2px)
+                box-shadow: 0px 0px 3px #b7b7b7
+            a
                 display: inline-block
-
-                box-shadow: 0px 2px 3px #b7b7b7
-                border-radius: 5px
-                background-color: #ededed
-                margin-top: 20px
-                cursor: pointer
-                font-weight: bold
-                
-                letter-spacing: 2px
-                transition: all 200ms
-                &:hover
-                    transform: translateY(-3px)
-                    box-shadow: 0px 4px 3px #b7b7b7
-                &:active
-                    transform: translateY(2px)
-                    box-shadow: 0px 0px 3px #b7b7b7
-                a
-                    display: inline-block
-                    position: relative
-                    padding: 15px 20px
-                    outline: 0px
-                    color: #919191
+                position: relative
+                padding: 15px 20px
+                outline: 0px
+                color: #919191
 
         ul.slick-dots
  
