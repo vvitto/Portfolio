@@ -358,8 +358,8 @@ body {
         max-width: 600px;
         position: relative;
         z-index: 10000;
-        -webkit-box-shadow: -20px 5px 20px #e5e5e5;
-                box-shadow: -20px 5px 20px #e5e5e5;
+        -webkit-box-shadow: -20px 20px 20px #e5e5e5;
+                box-shadow: -20px 20px 20px #e5e5e5;
         -webkit-transform: scale(0.9);
             -ms-transform: scale(0.9);
                 transform: scale(0.9);

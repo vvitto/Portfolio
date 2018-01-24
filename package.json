@@ -18,7 +18,8 @@
     "gulp-imagemin": "^3.4.0",
     "gulp-pug": "^3.3.0",
     "gulp-sass": "^3.1.0",
-    "run-sequence": "^2.2.0"
+    "run-sequence": "^2.2.0",
+    "vinyl-ftp": "^0.6.0"
   },
   "repository": {
     "type": "git",
